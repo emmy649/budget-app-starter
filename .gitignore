@@ -1,0 +1,48 @@
+# --- Node / package managers ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# (по избор) ако НЕ искаш да държиш lock файла, махни коментара:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# --- Vite / build артефакти ---
+dist/
+.vite/
+node_modules/.vite/
+
+# --- Кешове и временни файлове ---
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.tailwind-cache/
+.postcss-cache/
+*.tsbuildinfo
+*.lcov
+coverage/
+
+# --- Service Worker (генерирани варианти, ако ползваш Workbox) ---
+workbox-*.js
+sw.*.map
+
+# --- IDE/OS ---
+# macOS / Windows
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# JetBrains / VS Code
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# --- Environment (не качвай тайни) ---
+.env
+.env.*.local
+!.env.example
